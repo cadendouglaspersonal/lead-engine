@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ringy Lead Engine — autonomous follow-up for insurance agents</title>
+<style>
+  :root{--ink:#13151a;--muted:#5b6472;--line:#e6e8ec;--bg:#fff;--accent:#5b54e6;--accent-ink:#3d37b8;--soft:#f5f6f8}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  header{padding:56px 0 24px;text-align:center}
+  h1{font-size:34px;line-height:1.2;margin:0 0 12px;font-weight:600}
+  .sub{font-size:19px;color:var(--muted);max-width:620px;margin:0 auto}
+  .card{border:1px solid var(--line);border-radius:16px;padding:28px;margin:28px 0;background:var(--bg)}
+  .price{display:flex;align-items:baseline;gap:10px;margin:0 0 6px}
+  .price .amt{font-size:44px;font-weight:700}
+  .price .per{color:var(--muted);font-size:16px}
+  .promo{background:var(--soft);border:1px dashed var(--line);border-radius:12px;padding:14px 16px;margin:16px 0;font-size:15px;color:var(--muted)}
+  .buy{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font-size:18px;font-weight:600;padding:16px 24px;border-radius:12px;margin-top:18px}
+  .buy:hover{background:var(--accent-ink)}
+  ul.feat{list-style:none;padding:0;margin:20px 0}
+  ul.feat li{padding:10px 0 10px 30px;position:relative;border-top:1px solid var(--line)}
+  ul.feat li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+  h2{font-size:22px;margin:36px 0 10px}
+  .q{font-weight:600;margin:18px 0 4px}
+  .fine{font-size:13px;color:var(--muted);border-top:1px solid var(--line);margin-top:40px;padding:24px 0 60px}
+  .pill{display:inline-block;background:var(--soft);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--accent-ink);font-weight:600;margin-bottom:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="pill">For insurance agents on Ringy + Calendly</span>
+    <h1>Your leads, worked around the clock.</h1>
+    <p class="sub">The Ringy Lead Engine gives you a tireless texting assistant that monitors your inbox, books appointments, runs your follow-up ladder, and reminds your appointments — in a voice built from real closed-deal language.</p>
+  </header>
+
+  <div class="card">
+    <div class="price"><span class="amt">$99</span><span class="per">one-time · yours to keep · free updates</span></div>
+    <ul class="feat">
+      <li>Monitors your Ringy inbox every 15 minutes and replies in your assistant's voice</li>
+      <li>Books calls straight into your Calendly and texts the confirmation</li>
+      <li>Runs a paced 4-touch follow-up ladder on non-responders</li>
+      <li>Works your hottest dispositions twice a day — never lets a warm lead go cold</li>
+      <li>Sends smart 24-hour appointment reminders</li>
+      <li>A guided setup wizard configures it to your account in minutes</li>
+    </ul>
+    <div class="promo">Have a promo code? Enter it in the <strong>"Add promotion code"</strong> box on the secure Stripe checkout page — the discount applies there.</div>
+    <a class="buy" href="https://buy.stripe.com/fZufZ9dMn6zwdMh8vqeEo00">Get the Lead Engine — $99</a>
+  </div>
+
+  <h2>How it works</h2>
+  <p>Checkout is handled securely by Stripe. The moment your payment clears you'll get an emailed receipt and a link to download the plugin plus simple install instructions. Drop it into Claude's Cowork mode, say "set up the lead engine," and the wizard walks you through making it yours — your assistant's name, your company, your Calendly, and your Ringy dispositions (it reads your account and matches them automatically).</p>
+
+  <h2>Questions</h2>
+  <p class="q">What do I need?</p>
+  <p>A Ringy CRM account, a Calendly account, and the Claude desktop app with the Chrome extension. Full list ships with the plugin.</p>
+  <p class="q">Do I get updates?</p>
+  <p>Yes. Your purchase is tied to your email, and you'll be notified when a new version ships. Updates are free.</p>
+  <p class="q">Is this compliant?</p>
+  <p>The engine has opt-out, quiet-hour, and duplicate-message guardrails built in. You are responsible for having consent to text your own leads and for following the laws and carrier rules that apply to you.</p>
+
+  <p class="fine">Ringy Lead Engine is an independent product and is not affiliated with, endorsed by, or sponsored by Ringy or Calendly. Sending SMS marketing is regulated (TCPA and state law in the US, plus carrier/CTIA rules); you are solely responsible for compliance and for having consent to contact your leads. Sold as-is, no warranty. © <span id="yr"></span> Caden Douglas.</p>
+
+</div>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
